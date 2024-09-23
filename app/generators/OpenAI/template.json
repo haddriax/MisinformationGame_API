@@ -1,0 +1,284 @@
+{
+  "version": 1,
+  "id": "",
+  "authorID": "r8b1DsQzy5M70Fz5w5AAMb8ViyT2",
+  "authorName": "Author Name",
+  "lastModifiedTime": 1715691683,
+  "enabled": false,
+  "basicSettings": {
+    "name": "",
+    "description": "",
+    "prompt": "",
+    "length": 10,
+    "requireComments": "optional",
+    "requireReactions": false,
+    "requireIdentification": true
+  },
+  "uiSettings": {
+    "displayPostsInFeed": true,
+    "displayFollowers": true,
+    "displayCredibility": true,
+    "displayProgress": false,
+    "displayNumberOfReactions": true,
+    "allowMultipleReactions": true,
+    "postEnabledReactions": {
+      "like": true,
+      "dislike": true,
+      "share": true,
+      "flag": true,
+      "skip": true
+    },
+    "commentEnabledReactions": {
+      "like": true,
+      "dislike": true
+    }
+  },
+  "advancedSettings": {
+    "minimumCommentLength": 1,
+    "promptDelaySeconds": 2.5,
+    "reactDelaySeconds": 1.5,
+    "genCompletionCode": true,
+    "completionCodeDigits": 4,
+    "genRandomDefaultAvatars": true
+  },
+  "pagesSettings": {
+    "preIntro": "Welcome to my great new study! ",
+    "preIntroDelaySeconds": 1,
+    "rules": "<span style='font-size: 1.6363636363636365em;font-weight: bold'>How to Participate</span>",
+    "rulesDelaySeconds": 1,
+    "postIntro": "Introduction after the <span style='font-style: italic'>game rules </span>page.<br/><br/>",
+    "postIntroDelaySeconds": 2,
+    "debrief": "Debriefing after the game.<br/><br/>{{COMPLETION-CODE-WITH-CONFIRMATION}}"
+  },
+  "sourcePostSelectionMethod": {
+    "type": "Credibility",
+    "linearRelationship": {
+      "slope": 0.8,
+      "intercept": 10
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Jake",
+      "avatar": {
+        "type": "png"
+      },
+      "style": {
+        "backgroundColor": "#c9d3f2"
+      },
+      "maxPosts": -1,
+      "followers": {
+        "mean": 250,
+        "stdDeviation": 0,
+        "skewShape": 0,
+        "min": 250,
+        "max": 250
+      },
+      "credibility": {
+        "mean": 30,
+        "stdDeviation": 0,
+        "skewShape": 0,
+        "min": 0,
+        "max": 100
+      },
+      "truePostPercentage": -1
+    },
+    {
+      "id": "S2",
+      "name": "Bird Person",
+      "avatar": {
+        "type": "png"
+      },
+      "style": {
+        "backgroundColor": "#74ebd5"
+      },
+      "maxPosts": -1,
+      "followers": {
+        "mean": 0,
+        "stdDeviation": 500,
+        "skewShape": 10,
+        "min": 0,
+        "max": 1500
+      },
+      "credibility": {
+        "mean": 50,
+        "stdDeviation": 20,
+        "skewShape": 0,
+        "min": 0,
+        "max": 100
+      },
+      "truePostPercentage": -1
+    }
+  ],
+  "posts": [
+    {
+      "id": "P1",
+      "headline": "This beautiful set of chessmen found on the Isle of Lewis were carved from walrus’ tooth in 1150 by Northmen.",
+      "content": {
+        "type": "jpg"
+      },
+      "isTrue": true,
+      "changesToFollowers": {
+        "like": {
+          "mean": 1,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "dislike": {
+          "mean": -1,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "share": {
+          "mean": 5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "flag": {
+          "mean": -5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        }
+      },
+      "changesToCredibility": {
+        "like": {
+          "mean": 1,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "dislike": {
+          "mean": -1.5,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "share": {
+          "mean": 5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "flag": {
+          "mean": -3,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        }
+      },
+      "numberOfReactions": {
+        "like": {
+          "mean": 30,
+          "stdDeviation": 5,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "dislike": {
+          "mean": 0,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "share": {
+          "mean": 5,
+          "stdDeviation": 3,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "flag": {
+          "mean": 2,
+          "stdDeviation": 2,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        }
+      },
+      "comments": [
+        {
+          "sourceName": "Jim",
+          "message": "They have cool hats",
+          "numberOfReactions": {
+            "like": {
+              "mean": 12,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 12,
+              "max": 12
+            },
+            "dislike": {
+              "mean": 3,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 3,
+              "max": 3
+            },
+            "share": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "flag": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "sourceName": "Joe",
+          "message": "Fascinating!",
+          "numberOfReactions": {
+            "like": {
+              "mean": 3,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 3,
+              "max": 3
+            },
+            "dislike": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "share": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "flag": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

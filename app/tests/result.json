@@ -1,0 +1,144 @@
+{
+  "studyID": "wtgkpwlp7x86xzba",
+  "studyModTime": 1710779337,
+  "sessionID": "tahewrsiq3cm81eq",
+  "startTime": 1715759045,
+  "endTime": 1715759098,
+  "states": [
+    {
+      "currentSource": {
+        "sourceID": "S3",
+        "credibility": 70,
+        "followers": 2500,
+        "remainingUses": 5
+      },
+      "currentPost": {
+        "postID": "P2",
+        "numberOfReactions": {
+          "like": 1,
+          "dislike": 3,
+          "share": 8,
+          "flag": 19
+        },
+        "comments": [
+          {
+            "numberOfReactions": {
+              "like": 2,
+              "dislike": 1
+            }
+          }
+        ],
+        "shown": false
+      }
+    },
+    {
+      "currentSource": {
+        "sourceID": "S1",
+        "credibility": 30,
+        "followers": 250,
+        "remainingUses": -1
+      },
+      "currentPost": {
+        "postID": "P1",
+        "numberOfReactions": {
+          "like": 30,
+          "dislike": 0,
+          "share": 8,
+          "flag": 2
+        },
+        "comments": [
+          {
+            "numberOfReactions": {
+              "like": 12,
+              "dislike": 3
+            }
+          },
+          {
+            "numberOfReactions": {
+              "like": 3,
+              "dislike": 1
+            }
+          }
+        ],
+        "shown": false
+      }
+    }
+  ],
+  "participant": {
+    "participantID": "808",
+    "credibility": 51.83867735470942,
+    "followers": 0.8947895791583167,
+    "interactions": [
+      {
+        "postReactions": [],
+        "commentReactions": [
+          {
+            "commentID": 0,
+            "reactions": [
+              "like"
+            ],
+            "timer": {
+              "firstShowTime": 1715759061666,
+              "lastShowTime": null,
+              "lastHideTime": null,
+              "visibleDuration": 10861,
+              "firstInteractTime": 1715759093107,
+              "lastInteractTime": 1715759093107
+            }
+          }
+        ],
+        "comment": "covid is cool",
+        "timer": {
+          "firstShowTime": 1715759061666,
+          "lastShowTime": null,
+          "lastHideTime": null,
+          "visibleDuration": 10861,
+          "firstInteractTime": 1715759090943,
+          "lastInteractTime": 1715759093107
+        }
+      },
+      {
+        "postReactions": [
+          "like"
+        ],
+        "commentReactions": [
+          {
+            "commentID": 0,
+            "reactions": [
+              "like"
+            ],
+            "timer": {
+              "firstShowTime": 1715759064808,
+              "lastShowTime": null,
+              "lastHideTime": null,
+              "visibleDuration": 33288,
+              "firstInteractTime": 1715759070599,
+              "lastInteractTime": 1715759070599
+            }
+          }
+        ],
+        "comment": "really nice hats",
+        "timer": {
+          "firstShowTime": 1715759064808,
+          "lastShowTime": null,
+          "lastHideTime": null,
+          "visibleDuration": 33288,
+          "firstInteractTime": 1715759070599,
+          "lastInteractTime": 1715759094449
+        }
+      }
+    ],
+    "credibilityHistory": [
+      50,
+      50,
+      51.83867735470942
+    ],
+    "followerHistory": [
+      0,
+      0,
+      0.8947895791583167
+    ]
+  },
+  "completionCode": "5699",
+  "savedResults": false
+}

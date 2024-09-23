@@ -1,0 +1,444 @@
+{
+  "version": 1,
+  "id": "mdiedt60mspfdms7",
+  "authorID": "r8b1DsQzy5M70Fz5w5AAMb8ViyT2",
+  "authorName": "Baris Ertugrul",
+  "lastModifiedTime": 1715691683,
+  "enabled": false,
+  "basicSettings": {
+    "name": "Study",
+    "description": "Default Study Description",
+    "prompt": "Default Study Prompt",
+    "length": 2,
+    "requireComments": "optional",
+    "requireReactions": false,
+    "requireIdentification": true
+  },
+  "uiSettings": {
+    "displayPostsInFeed": true,
+    "displayFollowers": true,
+    "displayCredibility": true,
+    "displayProgress": false,
+    "displayNumberOfReactions": true,
+    "allowMultipleReactions": true,
+    "postEnabledReactions": {
+      "like": true,
+      "dislike": true,
+      "share": true,
+      "flag": true,
+      "skip": true
+    },
+    "commentEnabledReactions": {
+      "like": true,
+      "dislike": true
+    }
+  },
+  "advancedSettings": {
+    "minimumCommentLength": 1,
+    "promptDelaySeconds": 2.5,
+    "reactDelaySeconds": 1.5,
+    "genCompletionCode": true,
+    "completionCodeDigits": 4,
+    "genRandomDefaultAvatars": true
+  },
+  "pagesSettings": {
+    "preIntro": "Welcome to my great new study! ",
+    "preIntroDelaySeconds": 1,
+    "rules": "<span style='font-size: 1.6363636363636365em;font-weight: bold'>How to Participate</span><br/>You will be shown a series of posts, which you are encouraged to interact with.<br/><br/>When you are shown a post, you may choose one of the following reactions:<br/>{{ENABLED-POST-REACTIONS}}<br/>{{LIKE}} The <span style='font-style: italic;font-weight: bold'>like</span> button will indicate to others that you like the content of the post.<br/>{{DISLIKE}} The <span style='font-style: italic;font-weight: bold'>dislike</span> button will indicate to others that you dislike the content of the post.<br/>{{SHARE}} The <span style='font-style: italic;font-weight: bold'>share</span> button will show this post to your followers.<br/>{{FLAG}} The <span style='font-style: italic;font-weight: bold'>flag</span> button will report this post as harmful or misleading.<br/>The <span style='font-style: italic;font-weight: bold'>skip post</span> button will indicate that you do not wish to interact with this post.<br/><br/>If there are any comments beneath the post, you may also choose one of the following reactions for each comment:<br/>{{ENABLED-COMMENT-REACTIONS}}<br/>{{LIKE}} The <span style='font-style: italic;font-weight: bold'>like</span> button will indicate to others that you like the content of the comment.<br/>{{DISLIKE}} The <span style='font-style: italic;font-weight: bold'>dislike</span> button will indicate to others that you dislike the content of the comment.<br/><br/>You may also write your own comments by typing your comment in the comment entry box below the post and clicking the <span style='font-style: italic;font-weight: bold'>submit comment</span> button.<br/>{{COMMENT-ENTRY-EXAMPLE}}<br/><br/>To move on to the next post, you can press the <span style='font-style: italic;font-weight: bold'>continue to next post</span> button underneath <span style='font-weight: bold'>Your Progress</span>. Your follower count and credibility rating are also shown under <span style='font-weight: bold'>Your Progress</span>,<br/><br/>{{YOUR-PROGRESS-EXAMPLE}}<br/><br/>Your <span style='font-weight: bold'>follower count</span> is the number of other users following you on this network.<br/><br/>Your <span style='font-weight: bold'>credibility rating</span> indicates how credible you are perceived to be on a scale from 0 to 100. Credibility ratings will also be colour coded from <span style='font-weight: bold;color: rgba(150, 24, 24, 1)'>dark red</span> for the 0-10 range to <span style='font-weight: bold;color: rgba(0, 55, 195, 1)'>dark blue</span> for the 90-100 range.<br/><br/>You will start with 0 followers and a credibility rating of 50. As you interact with posts, these values may change based upon your interactions.",
+    "rulesDelaySeconds": 1,
+    "postIntro": "Introduction after the <span style='font-style: italic'>game rules </span>page.<br/><br/>",
+    "postIntroDelaySeconds": 2,
+    "debrief": "Debriefing after the game.<br/><br/>{{COMPLETION-CODE-WITH-CONFIRMATION}}"
+  },
+  "sourcePostSelectionMethod": {
+    "type": "Credibility",
+    "linearRelationship": {
+      "slope": 0.8,
+      "intercept": 10
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Jake",
+      "avatar": {
+        "type": "png"
+      },
+      "style": {
+        "backgroundColor": "#c9d3f2"
+      },
+      "maxPosts": -1,
+      "followers": {
+        "mean": 250,
+        "stdDeviation": 0,
+        "skewShape": 0,
+        "min": 250,
+        "max": 250
+      },
+      "credibility": {
+        "mean": 30,
+        "stdDeviation": 0,
+        "skewShape": 0,
+        "min": 0,
+        "max": 100
+      },
+      "truePostPercentage": -1
+    },
+    {
+      "id": "S2",
+      "name": "Bird Person",
+      "avatar": {
+        "type": "png"
+      },
+      "style": {
+        "backgroundColor": "#74ebd5"
+      },
+      "maxPosts": -1,
+      "followers": {
+        "mean": 0,
+        "stdDeviation": 500,
+        "skewShape": 10,
+        "min": 0,
+        "max": 1500
+      },
+      "credibility": {
+        "mean": 50,
+        "stdDeviation": 20,
+        "skewShape": 0,
+        "min": 0,
+        "max": 100
+      },
+      "truePostPercentage": -1
+    },
+    {
+      "id": "S3",
+      "name": "Rainy Cloud",
+      "avatar": {
+        "type": "png"
+      },
+      "style": {
+        "backgroundColor": "#c9d3f2"
+      },
+      "maxPosts": 5,
+      "followers": {
+        "mean": 2500,
+        "stdDeviation": 0,
+        "skewShape": 0,
+        "min": 2500,
+        "max": 2500
+      },
+      "credibility": {
+        "mean": 70,
+        "stdDeviation": 0,
+        "skewShape": 0,
+        "min": 0,
+        "max": 100
+      },
+      "truePostPercentage": -1
+    }
+  ],
+  "posts": [
+    {
+      "id": "P1",
+      "headline": "This beautiful set of chessmen found on the Isle of Lewis were carved from walrus’ tooth in 1150 by Northmen.",
+      "content": {
+        "type": "jpg"
+      },
+      "isTrue": true,
+      "changesToFollowers": {
+        "like": {
+          "mean": 1,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "dislike": {
+          "mean": -1,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "share": {
+          "mean": 5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "flag": {
+          "mean": -5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        }
+      },
+      "changesToCredibility": {
+        "like": {
+          "mean": 1,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "dislike": {
+          "mean": -1.5,
+          "stdDeviation": 0.5,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "share": {
+          "mean": 5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "flag": {
+          "mean": -3,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        }
+      },
+      "numberOfReactions": {
+        "like": {
+          "mean": 30,
+          "stdDeviation": 5,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "dislike": {
+          "mean": 0,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "share": {
+          "mean": 5,
+          "stdDeviation": 3,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "flag": {
+          "mean": 2,
+          "stdDeviation": 2,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        }
+      },
+      "comments": [
+        {
+          "sourceName": "Jim",
+          "message": "They have cool hats",
+          "numberOfReactions": {
+            "like": {
+              "mean": 12,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 12,
+              "max": 12
+            },
+            "dislike": {
+              "mean": 3,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 3,
+              "max": 3
+            },
+            "share": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "flag": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        {
+          "sourceName": "Joe",
+          "message": "Fascinating!",
+          "numberOfReactions": {
+            "like": {
+              "mean": 3,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 3,
+              "max": 3
+            },
+            "dislike": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "share": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "flag": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "headline": "NEWS: COVID-19 is now being spread through the deadly 5G mobile network.",
+      "content": {
+        "type": "jpg"
+      },
+      "isTrue": false,
+      "changesToFollowers": {
+        "like": {
+          "mean": -3,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "dislike": {
+          "mean": 3,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "share": {
+          "mean": 12,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        },
+        "flag": {
+          "mean": 5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -1000000000,
+          "max": 1000000000
+        }
+      },
+      "changesToCredibility": {
+        "like": {
+          "mean": -2,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "dislike": {
+          "mean": 1,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "share": {
+          "mean": -3,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        },
+        "flag": {
+          "mean": 1.5,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": -100,
+          "max": 100
+        }
+      },
+      "numberOfReactions": {
+        "like": {
+          "mean": 1,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "dislike": {
+          "mean": 3,
+          "stdDeviation": 0,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "share": {
+          "mean": 12,
+          "stdDeviation": 4,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        },
+        "flag": {
+          "mean": 8,
+          "stdDeviation": 5,
+          "skewShape": 0,
+          "min": 0,
+          "max": 1000000000
+        }
+      },
+      "comments": [
+        {
+          "sourceName": "Jerry",
+          "message": "Yeah nah",
+          "numberOfReactions": {
+            "like": {
+              "mean": 2,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 2,
+              "max": 2
+            },
+            "dislike": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "share": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            },
+            "flag": {
+              "mean": 1,
+              "stdDeviation": 0,
+              "skewShape": 0,
+              "min": 1,
+              "max": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
